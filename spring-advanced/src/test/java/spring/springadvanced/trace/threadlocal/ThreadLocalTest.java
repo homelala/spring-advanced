@@ -2,7 +2,6 @@ package spring.springadvanced.trace.threadlocal;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
-import spring.springadvanced.trace.threadlocal.code.FieldService;
 import spring.springadvanced.trace.threadlocal.code.ThreadLocalService;
 
 @Slf4j

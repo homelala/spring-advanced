@@ -1,6 +1,8 @@
-package spring.springadvanced.trace;
+package spring.springadvanced.trace.logtrace;
 
 import org.junit.jupiter.api.Test;
+import spring.springadvanced.trace.FieldLogTrace;
+import spring.springadvanced.trace.TraceStatus;
 
 class FieldLogTraceTest {
 
