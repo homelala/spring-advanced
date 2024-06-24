@@ -17,10 +17,11 @@ public class ProxyPatternTest {
     }
 
     @Test
-    void cacheProxyTest() {
+    void CacheProxyTest() {
         RealSubject realSubject = new RealSubject();
         CacheProxy cacheProxy = new CacheProxy(realSubject);
         ProxyPatternClient client = new ProxyPatternClient(cacheProxy);
+
         client.execute();
         client.execute();
         client.execute();
