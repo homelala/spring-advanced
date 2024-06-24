@@ -9,15 +9,11 @@ import spring.springadvanced.trace.callback.TraceTemplate;
 import spring.springadvanced.trace.template.AbstractTemplate;
 
 @RestController
+@RequiredArgsConstructor
 public class OrderControllerV5 {
 
     private final OrderServiceV5 orderService;
     private final TraceTemplate template;
-
-    public OrderControllerV5(OrderServiceV5 orderService, LogTrace trace) {
-        this.orderService = orderService;
-        this.template = new TraceTemplate(trace);
-    }
 
     @GetMapping("/v5/request")
     public String orderItem(String itemId){

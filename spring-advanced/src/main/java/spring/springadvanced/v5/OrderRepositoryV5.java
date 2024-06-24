@@ -9,14 +9,10 @@ import spring.springadvanced.trace.callback.TraceTemplate;
 import spring.springadvanced.trace.template.AbstractTemplate;
 
 @Repository
+@RequiredArgsConstructor
 public class OrderRepositoryV5 {
 
-
     private final TraceTemplate template;
-
-    public OrderRepositoryV5(LogTrace trace) {
-        this.template = new TraceTemplate(trace);
-    }
 
     public void save(String itemId){
         template.execute(this.getClass().getName(), (TraceCallBack<Void>) () -> {

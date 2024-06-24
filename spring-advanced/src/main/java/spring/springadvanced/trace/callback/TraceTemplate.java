@@ -1,8 +1,10 @@
 package spring.springadvanced.trace.callback;
 
+import org.springframework.stereotype.Component;
 import spring.springadvanced.trace.LogTrace;
 import spring.springadvanced.trace.TraceStatus;
 
+@Component
 public class TraceTemplate {
     private final LogTrace trace;
 
