@@ -30,5 +30,4 @@ public class JdkDynamicProxyTest {
         log.info("target = {}", target.getClass());
         log.info("proxy = {}", proxy.getClass());
     }
-
 }
