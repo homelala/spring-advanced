@@ -3,9 +3,10 @@ package hello.aop.member;
 import hello.aop.member.annotation.ClassAop;
 import hello.aop.member.annotation.MethodAop;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.stereotype.Component;
 
 @ClassAop
-@ComponentScan
+@Component
 public class MemberServiceImpl implements MemberService {
     @Override
     @MethodAop("test value")
